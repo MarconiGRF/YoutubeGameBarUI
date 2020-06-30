@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { VideoUIModule } from './videoUI/videoUI.module'
+import { PlaylistUIModule } from './videoUI/playlistUI.module'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { VideoUIModule } from './videoUI/videoUI.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    VideoUIModule
+    VideoUIModule,
+    PlaylistUIModule
   ],
   providers: [],
   bootstrap: [AppComponent]

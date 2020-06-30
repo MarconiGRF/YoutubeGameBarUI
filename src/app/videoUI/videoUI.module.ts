@@ -7,8 +7,7 @@ import { CommonModule } from '@angular/common'
 import { VideoUI } from './videoUI.component';
 
 const routes: Routes = [
-  { path: 'video-ui', component: VideoUI},
-  { path: '**', redirectTo: 'video-ui'}
+  { path: 'video-ui', component: VideoUI}
 ];
 
 @NgModule({
