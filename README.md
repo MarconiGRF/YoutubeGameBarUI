@@ -4,11 +4,15 @@ This is an initial implementation of YoutubeGameBar's VideoUI and **certainly** 
 
 ## Development
 
-First run `npm install` on repository's root directory.
+* 1: First run `npm install` on repository's root directory.
 
-Then run `ng serve` for a development server, then go to `http://localhost:4200/video-ui?mediaUrl=ABCDEF`, where `ABCDEF` is the videoURL you want to the `youtube-player` angular component to load. It's important to use `localhost` instead of `127.0.0.1` on the URL, otherwise it may be problematic to load some videos.
+* 2: Then run `ng serve` to start a development server.
+    * 2.1: Then go to `http://localhost:4200/video-ui?mediaUrl=VIDEO_ID`, where `VIDEO_ID` is the Video ID you want to the `youtube-player` angular component to load.
+    * 2.2: Then go to `http://localhost:4200/playlist-ui?listUrl=PLAYLIST_ID`, where `PLAYLIST_ID` is the Playlist ID you want to the `YouTube iFrame` to load.
+
+ It's important to use `localhost` instead of `127.0.0.1` on the URL, otherwise it may be problematic to load some videos.
 
 ## Building and testing
 
 Run `ng build --prod=true` to build the videoUI project.
-Once builded, serve the builded files with an webserver then test going to `localhost/?mediaUrl=ABCDEF`, the app will automatically route to the desired location (still working on a fix for this redirect).
+Once builded, serve the builded files with an webserver then test it with the url formats describeds in item `2`, the app will automatically route to the desired location (still working on a fix to correctly handle Angular's redirects).
