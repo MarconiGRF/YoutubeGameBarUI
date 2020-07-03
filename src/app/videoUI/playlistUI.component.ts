@@ -17,9 +17,9 @@ export class PlaylistUI implements OnInit {
 
   ngOnInit() {
     this.route.queryParams.subscribe(parameters => {
-      if (parameters['listUrl']) {
+      if (parameters['listId']) {
         let baseEmbedUrl: String = "https://www.youtube.com/embed/videoseries?list=";
-        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(baseEmbedUrl + parameters['listUrl']);
+        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(baseEmbedUrl + parameters['listId']);
         this.isValid = true;
       }
     });

@@ -10,7 +10,7 @@ export class VideoUI implements OnInit {
     private route: ActivatedRoute,
     ) {}
 
-  mediaUrl: string;
+  videoId: string;
 
   ngOnInit() {
     const tag = document.createElement('script');
@@ -18,8 +18,8 @@ export class VideoUI implements OnInit {
     document.body.appendChild(tag);
     
     this.route.queryParams.subscribe(parameters => {
-      if (parameters['mediaUrl']) {
-        this.mediaUrl = parameters['mediaUrl'];
+      if (parameters['videoId']) {
+        this.videoId = parameters['videoId'];
       }
     });
   }
