@@ -1,5 +1,5 @@
-import { Component, OnInit, SecurityContext } from '@angular/core'; 
-import { ActivatedRoute } from '@angular/router'
+import { Component, OnInit, SecurityContext } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -17,9 +17,10 @@ export class PlaylistUI implements OnInit {
 
   ngOnInit() {
     this.route.queryParams.subscribe(parameters => {
-      if (parameters['listId']) {
-        let baseEmbedUrl: String = "https://www.youtube.com/embed/videoseries?list=";
-        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(baseEmbedUrl + parameters['listId']);
+      if (parameters.listId) {
+        const baseEmbedUrl: any = 'https://www.youtube.com/embed/videoseries?list=';
+        const autoPlayParam: any = '&autoplay=1&loop=1';
+        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(baseEmbedUrl + parameters.listId + autoPlayParam);
         this.isValid = true;
       }
     });
