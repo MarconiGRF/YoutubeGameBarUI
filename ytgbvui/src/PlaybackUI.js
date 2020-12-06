@@ -15,7 +15,7 @@ function PlaybackUI() {
 
 	if (window.location.search && window.location.search !== "") {
 		const videoId = window.location.search.split("videoId=");
-		const playlistId = window.location.search.split("playlistId=");
+		const playlistId = window.location.search.split("listId=");
 
 		let completeSource = "";
 		if (videoId.length > 1) {
