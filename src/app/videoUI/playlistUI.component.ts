@@ -25,4 +25,8 @@ export class PlaylistUI implements OnInit {
       }
     });
   }
+
+  notifyBack() {
+    (window as any).external.notify('goback');
+  }
 }

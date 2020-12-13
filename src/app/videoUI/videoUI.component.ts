@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {YouTubePlayer} from '@angular/youtube-player';
 
 @Component({
   templateUrl: './videoUI.component.html',
@@ -10,7 +9,7 @@ export class VideoUI implements OnInit {
   constructor(
     private route: ActivatedRoute,
     ) {}
-
+  
   videoId: string;
   keyboardEvent: any;
   initMethod: any;
@@ -28,6 +27,10 @@ export class VideoUI implements OnInit {
         this.videoId = parameters.videoId;
       }
     });
+  }
+
+  notifyBack() {
+    (window as any).external.notify('goback');
   }
 
   autoPlay(target: any) {

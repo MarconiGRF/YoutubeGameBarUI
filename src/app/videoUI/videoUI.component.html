@@ -1,3 +1,6 @@
 <div *ngIf="videoId">
+    <button class="backButton" (click)="notifyBack()">
+        <img class="backIcon" src="../../assets/mdl2_back.png" alt={imgAlt}/>
+    </button>
     <youtube-player videoId="{{ videoId }}" (ready)="autoPlay($event.target)"></youtube-player>
 </div>

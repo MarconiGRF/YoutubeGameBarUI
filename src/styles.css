@@ -7,3 +7,23 @@ iframe {
     height: 100%;
     width: 100%;
 }
+
+.backButton {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border: black;
+    transition: opacity 0.3s;
+  }
+  
+  .backButton:hover {
+    opacity: 1;
+  }
+  
+  .backIcon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }

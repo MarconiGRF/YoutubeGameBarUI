@@ -1,4 +1,7 @@
 <div *ngIf="isValid">
+    <button class="backButton" (click)="notifyBack()">
+        <img class="backIcon" src="../../assets/mdl2_back.png" alt={imgAlt}/>
+    </button>
     <iframe id="player" type="text/html" [src]="safeUrl" allow="autoplay; encrypted-media" autoplay="1" frameborder="0">
     </iframe>
 </div>
