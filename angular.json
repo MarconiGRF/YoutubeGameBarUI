@@ -31,7 +31,7 @@
           },
           "configurations": {
             "production": {
-              "deployUrl": "/",
+              "deployUrl": "/ytgbvui/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
