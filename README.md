@@ -1,6 +1,6 @@
 ## Common notes
 
-This is an initial implementation of YoutubeGameBar's VideoUI and **certainly** will be changed to a better solution in the future.
+This is an initial implementation of YTGameBar's VideoUI and **certainly** will be changed to a better solution in the future.
 
 ## Development
 
