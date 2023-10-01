@@ -1,7 +1,7 @@
 ## Common notes
 
-This is an initial implementation of YTGameBar's VideoUI and **certainly** will be changed to a better solution in the future.
-Make sure to use **Node v14.21.3** or older, otherwise is very unlikely that the project will successfully build.
+- This is an initial implementation of YTGameBar's VideoUI and **certainly** will be changed to a better solution in the future.  
+- Make sure to use **Node v14.21.3** or older, otherwise is very unlikely that the project will successfully build.
 
 ## Development
 
